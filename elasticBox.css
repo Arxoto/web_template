@@ -1,0 +1,67 @@
+/*滚动条整体样式*/
+::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+    height: 8px;
+}
+
+/*滚动条的滑块*/
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: gray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkgray;
+}
+
+/*滚动条的轨道*/
+::-webkit-scrollbar-track {
+    /* border-radius: 4px; */
+    /* background: whitesmoke; */
+}
+
+body {
+    background-color: gainsboro;
+}
+
+.test-box {
+    height: 18rem;
+    width: 30rem;
+    box-shadow: 0 0 4px;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.frame-box {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: minmax(1rem, 7rem) 5fr minmax(3rem, 2fr);
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.frame-box>div {
+    overflow: auto;
+}
+
+.frame-head,
+.frame-foot {
+    grid-column: 1/4;
+}
+
+.frame-head,
+.frame-foot {
+    background-color: black;
+    color: white;
+}
+
+.frame-side-l,
+.frame-side-r {
+    background-color: antiquewhite;
+    color: brown;
+}
+
+.frame-body {}

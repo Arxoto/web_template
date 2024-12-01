@@ -1,0 +1,49 @@
+.family-box {
+    display: flex;
+    align-items: center;
+}
+
+/* flex-shrink: 0; 会导致宽度最外层不正确 显示不完整 */
+.parent-box {
+    font-size: 1rem;
+    font-weight: bold;
+    word-break: break-all;
+    /* overflow-wrap: break-word; */
+    min-width: 6rem;
+    max-width: 20rem;
+
+    margin: 1rem 0 0 0;
+    padding: 1rem 0 0 0;
+    border: 1px;
+    border-style: none none solid none;
+}
+
+.parent-0 {
+    font-size: 2rem;
+}
+
+.parent-1 {
+    font-size: 1.5rem;
+}
+
+.parent-2 {
+    font-size: 1.2rem;
+}
+
+
+.children-box {
+    padding: 0 0 0 3rem;
+}
+
+.mind-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.canv-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
